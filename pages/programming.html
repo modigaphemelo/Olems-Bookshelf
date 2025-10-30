@@ -13,28 +13,29 @@
     <header>
         <h1>Programming</h1>
         <p>From bare-metal C to pixel-perfect web - code as craft, not cargo cult.</p>
-        <span class="openbtn" onclick="openNav()">Menu</span>
+        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
     </header>
 
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <ul>
             <li><a href="../index.html">Home</a></li>
+            <li><a href="biographies-memoirs.html">Biographies & Memoirs</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
             <li><a href="fiction-literature.html">Fiction & Literature</a></li>
+            <li><a href="finance-wealth.html">Finance & Wealth</a></li>
             <li><a href="personal-development.html">Personal Development</a></li>
             <li><a href="philosophy.html">Philosophy</a></li>
-            <li><a href="biographies-memoirs.html">Biographies & Memoirs</a></li>
-            <li><a href="science-mathematics.html">Science & Mathematics</a></li>
             <li><a href="relationships.html">Relationships</a></li>
+            <li><a href="science-mathematics.html">Science & Mathematics</a></li>
         </ul>
     </div>
 
     <main>
 
-        <!-- LANGUAGE FOUNDATIONS -->
         <div class="book-section">
-            <h2>Language Foundations</h2>
-            <p>Modern, beginner-friendly intros to core programming languages.</p>
+            <h2>C Programming</h2>
+            <p>Timeless and modern guides to the language that powers systems, emphasizing portability and performance.</p>
             <div class="book-grid">
                 <div class="book-card rating-8">
                     <img src="../img/programming/Modern C for Absolute Beginners.jpg" alt="Modern C for Absolute Beginners Cover">
@@ -43,7 +44,34 @@
                     </div>
                     <div class="overview">
                         <h3>Overview</h3>
-                        <p>C stripped to essentials - no legacy cruft. Dmitrović’s crash course is crisp, example-rich, and beginner-friendly, but pointer-phobes beware: it’s a gentle nudge, not a deep dive. 8/10.</p>
+                        <p>A fresh take on C for newcomers, stripping away antiquity to focus on contemporary standards, though its brevity might leave some craving more depth in advanced topics, echoing the sparse nature of classics but with modern polish. 8/10.</p>
+                    </div>
+                </div>
+                <div class="book-card rating-8">
+                    <img src="../img/programming/The C Programming Language.png" alt="The C Programming Language Cover">
+                    <div class="book-title">
+                        <h3>The C Programming Language by Brian W. Kernighan and Dennis M. Ritchie (1988)</h3>
+                    </div>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>The cornerstone of C, distilling essence into succinct wisdom that forges mastery, yet its dated examples and terse style demand modern supplements to navigate archaic pitfalls, revealing the timeless tension between brevity and accessibility in foundational texts. 8/10.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-section">
+            <h2>C++ Programming</h2>
+            <p>Introductions to the multi-paradigm powerhouse, balancing power with complexity.</p>
+            <div class="book-grid">
+                <div class="book-card rating-8">
+                    <img src="../img/programming/Modern C++ for Absolute Beginners.jpg" alt="Modern C++ for Absolute Beginners Cover">
+                    <div class="book-title">
+                        <h3>Modern C++ for Absolute Beginners by Slobodan Dmitrović (2023)</h3>
+                    </div>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>An accessible entry to modern C++, championing standards from 11 to 23 with clarity, yet purists critique its pedagogical order - teaching arrays before vectors - as a logical misstep that could confuse novices on the path to resilient code. 8/10.</p>
                     </div>
                 </div>
                 <div class="book-card rating-7">
@@ -53,7 +81,7 @@
                     </div>
                     <div class="overview">
                         <h3>Overview</h3>
-                        <p>Gaddis’ textbook-style intro: structured, example-heavy, and classroom-proven. Covers C++17 basics well, but bloated with filler and tied to proprietary IDEs. Solid for students, stale for self-learners. 7/10.</p>
+                        <p>A structured odyssey through C++, rich with examples for classroom voyages, yet its bloat and IDE dependencies can anchor self-learners, highlighting the delicate balance between comprehensive guidance and streamlined autonomy in programming education. 7/10.</p>
                     </div>
                 </div>
                 <div class="book-card rating-5">
@@ -63,16 +91,15 @@
                     </div>
                     <div class="overview">
                         <h3>Overview</h3>
-                        <p>Hand-holding gone wrong. Overland’s 2016 relic dodges modern C++ (no C++11/14/17), leans on outdated console apps, and treats pointers like radioactive waste. Beginners get a false sense of safety; everyone else cringes. 5/10.</p>
+                        <p>Seeks to banish C++ trepidation with approachable prose, but falters with outdated relics and glaring errors - like mishandling sqrt - undermining confidence, a poignant reminder that even well-intentioned guides can sow doubt if not rigorously modernized. 5/10.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- WEB & MARKUP -->
         <div class="book-section">
-            <h2>Web & Markup</h2>
-            <p>Building the front-end: HTML, CSS, and lightweight docs.</p>
+            <h2>Web Markup and Styling</h2>
+            <p>Tools for crafting visually appealing and structured web content.</p>
             <div class="book-grid">
                 <div class="book-card rating-9">
                     <img src="../img/programming/HTML & CSS.png" alt="HTML & CSS Cover">
@@ -81,27 +108,61 @@
                     </div>
                     <div class="overview">
                         <h3>Overview</h3>
-                        <p>Duckett’s visual masterpiece - HTML/CSS as art book. Stunning layouts, crystal-clear code, but it’s 2011: no Flexbox, no Grid. Still the gold standard for beauty in teaching. 9/10.</p>
+                        <p>A visually stunning primer on web foundations, transforming markup into art, yet its 2011 vintage omits modern marvels like Flexbox, underscoring how even masterpieces age in the relentless evolution of digital design. 9/10.</p>
+                    </div>
+                </div>
+                <div class="book-card rating-8">
+                    <img src="../img/programming/CSS Animation 101.png" alt="CSS Animation 101 Cover">
+                    <div class="book-title">
+                        <h3>CSS Animation 101 by Donovan Hutchinson (2019)</h3>
+                    </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Infuses static pages with dynamic vitality through witty, practical lessons, though its foundational focus may tantalize without satiating those hungering for intricate, advanced choreography in the ballet of web motion. 8/10.</p>
                     </div>
                 </div>
                 <div class="book-card rating-7">
                     <img src="../img/programming/The Little Book of HTML-CSS Coding Guidelines.png" alt="The Little Book of HTML-CSS Coding Guidelines Cover">
                     <div class="book-title">
-                        <h3>The Little Book of HTML/CSS Coding Guidelines by Jens Oliver Meiert (2020)</h3>
+                        <h3>The Little Book of HTML/CSS Coding Guidelines by Jens Oliver Meiert (2015)</h3>
                     </div>
                     <div class="overview">
                         <h3>Overview</h3>
-                        <p>Meiert’s pocket-sized manifesto on clean, semantic markup and CSS discipline. Opinionated, practical, and refreshingly terse. Not a tutorial - a code hygiene bible. 7/10.</p>
+                        <p>A pocket manifesto championing disciplined markup and style, drawing from Google's playbook for maintainable code, yet its conciseness might gloss over the messy realities of collaborative chaos in real-world development. 7/10.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="book-section">
+            <h2>JavaScript Programming</h2>
+            <p>Diving into the dynamic language of the web.</p>
+            <div class="book-grid">
+                <div class="book-card rating-7">
+                    <img src="../img/programming/Eloquent JavaScript.png" alt="Eloquent JavaScript Cover">
+                    <div class="book-title">
+                        <h3>Eloquent JavaScript by Marijn Haverbeke (2018)</h3>
+                    </div>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Crafts JavaScript's narrative with poetic depth, probing its versatile soul through immersive projects, yet its dense escalation and jargon can alienate novices, mirroring the language's own duality of accessibility and profound complexity. 7/10.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-section">
+            <h2>Markdown</h2>
+            <p>Simplified markup for documentation and beyond.</p>
+            <div class="book-grid">
                 <div class="book-card rating-6">
                     <img src="../img/programming/The Markdown Guide.png" alt="The Markdown Guide Cover">
                     <div class="book-title">
-                        <h3>The Markdown Guide by Matt Cone (2019)</h3>
+                        <h3>The Markdown Guide by Matt Cone (2018)</h3>
                     </div>
                     <div class="overview">
                         <h3>Overview</h3>
-                        <p>Markdown in 100 pages - Cone’s cheat sheet is clean, free, and exhaustive. Perfect for writers, useless for coders who already live in .md. 6/10.</p>
+                        <p>A crisp compendium demystifying Markdown's elegance for plain-text prowess, exhaustive yet approachable, though veterans might deem it superfluous, underscoring its role as a bridge from complexity to simplicity in content creation. 6/10.</p>
                     </div>
                 </div>
             </div>
@@ -110,7 +171,7 @@
     </main>
 
     <footer>
-        <p>© 2025 Olems Bookshelf. All rights reserved.</p>
+        <p>&copy; 2025 Olems Bookshelf. All rights reserved.</p>
     </footer>
 
     <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
