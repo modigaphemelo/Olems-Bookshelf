@@ -13,11 +13,12 @@
     <header>
         <h1>Science & Mathematics</h1>
         <p>Stories of discovery, proof, and the beautifully deranged minds who chase them.</p>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <div class="header-decoration"></div>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="biographies-memoirs.html">Biographies & Memoirs</a></li>
@@ -29,38 +30,21 @@
             <li><a href="programming.html">Programming</a></li>
             <li><a href="relationships.html">Relationships</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="book-section">
-            <h2>Mathematical Lives</h2>
+        <section class="book-section" aria-labelledby="mathematical-lives">
+            <div class="section-decoration"></div>
+            <h2 id="mathematical-lives">Mathematical Lives</h2>
             <p>Portraits of mathematicians who lived for the beauty of proof.</p>
             <div class="book-grid">
-                <div class="book-card rating-8">
-                    <img src="../img/science-mathematic/The Man Who Loved Only Numbers.jpg" alt="The Man Who Loved Only Numbers Cover">
-                    <div class="book-title">
-                        <h3>The Man Who Loved Only Numbers by Paul Hoffman (1998)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Erdős: caffeine-fueled proof machine. Hoffman’s portrait is a delightful romp through math’s eccentric genius - light on theorems, heavy on legend. 8/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-7">
-                    <img src="../img/science-mathematic/Letters to a Young Mathematician.jpg" alt="Letters to a Young Mathematician Cover">
-                    <div class="book-title">
-                        <h3>Letters to a Young Mathematician by Ian Stewart (2006)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Stewart pens love letters to math’s next gen - wise, but its tea-and-crumpets tone dodges the grant-grinding grind. Cozy for dreamers, thin for realists. 7/10.</p>
-                    </div>
-                </div>
+
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
+        <div class="footer-decoration"></div>
         <p>&copy; 2025 Olems Bookshelf. All rights reserved.</p>
     </footer>
 
