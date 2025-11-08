@@ -13,11 +13,12 @@
     <header>
         <h1>Programming</h1>
         <p>From bare-metal C to pixel-perfect web - code as craft, not cargo cult.</p>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <div class="header-decoration"></div>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="biographies-memoirs.html">Biographies & Memoirs</a></li>
@@ -29,158 +30,102 @@
             <li><a href="relationships.html">Relationships</a></li>
             <li><a href="science-mathematics.html">Science & Mathematics</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-
-        <div class="book-section">
-            <h2>C Programming</h2>
+        <section class="book-section" aria-labelledby="c-programming">
+            <div class="section-decoration"></div>
+            <h2 id="c-programming">C Programming</h2>
             <p>Timeless and modern guides to the language that powers systems, emphasizing portability and performance.</p>
             <div class="book-grid">
-                <div class="book-card rating-8">
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
                     <img src="../img/programming/Modern C for Absolute Beginners.jpg" alt="Modern C for Absolute Beginners Cover">
                     <div class="book-title">
                         <h3>Modern C for Absolute Beginners by Slobodan Dmitrović (2021)</h3>
                     </div>
+                    <footer class="book-card-footer">Beginner-friendly • Modern Standards</footer>
                     <div class="overview">
                         <h3>Overview</h3>
                         <p>A fresh take on C for newcomers, stripping away antiquity to focus on contemporary standards, though its brevity might leave some craving more depth in advanced topics, echoing the sparse nature of classics but with modern polish. 8/10.</p>
                     </div>
-                </div>
-                <div class="book-card rating-8">
-                    <img src="../img/programming/The C Programming Language.png" alt="The C Programming Language Cover">
-                    <div class="book-title">
-                        <h3>The C Programming Language by Brian W. Kernighan and Dennis M. Ritchie (1988)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The cornerstone of C, distilling essence into succinct wisdom that forges mastery, yet its dated examples and terse style demand modern supplements to navigate archaic pitfalls, revealing the timeless tension between brevity and accessibility in foundational texts. 8/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-7">
-                    <img src="../img/programming/Expert C Programming - Deep C Secrets.png" alt="Expert C Programming: Deep C Secrets Cover">
-                    <div class="book-title">
-                        <h3>Expert C Programming: Deep C Secrets by Peter van der Linden (1994)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>van der Linden's whimsical excavation of C's arcane underbelly blends humor with historical lore, unveiling the language's quirky pitfalls and subtleties, yet its pre-C99 vintage renders some insights obsolete and gathering dust, a profound meditation on legacy code: true mastery honors the past's wisdom while evolving to evade the traps of outdated paradigms. 7/10.</p>
-                    </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="book-section">
-            <h2>C++ Programming</h2>
+        <section class="book-section" aria-labelledby="cpp-programming">
+            <div class="section-decoration"></div>
+            <h2 id="cpp-programming">C++ Programming</h2>
             <p>Introductions to the multi-paradigm powerhouse, balancing power with complexity.</p>
             <div class="book-grid">
-                <div class="book-card rating-8">
-                    <img src="../img/programming/Modern C++ for Absolute Beginners.jpg" alt="Modern C++ for Absolute Beginners Cover">
-                    <div class="book-title">
-                        <h3>Modern C++ for Absolute Beginners by Slobodan Dmitrović (2023)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An accessible entry to modern C++, championing standards from 11 to 23 with clarity, yet purists critique its pedagogical order - teaching arrays before vectors - as a logical misstep that could confuse novices on the path to resilient code. 8/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-7">
-                    <img src="../img/programming/Starting out with C++.png" alt="Starting Out with C++ Cover">
-                    <div class="book-title">
-                        <h3>Starting Out with C++ by Tony Gaddis (2021)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A structured odyssey through C++, rich with examples for classroom voyages, yet its bloat and IDE dependencies can anchor self-learners, highlighting the delicate balance between comprehensive guidance and streamlined autonomy in programming education. 7/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-5">
-                    <img src="../img/programming/C++ Without Fear.jpg" alt="C++ Without Fear Cover">
-                    <div class="book-title">
-                        <h3>C++ Without Fear by Brian Overland (2016)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Seeks to banish C++ trepidation with approachable prose, but falters with outdated relics and glaring errors - like mishandling sqrt - undermining confidence, a poignant reminder that even well-intentioned guides can sow doubt if not rigorously modernized. 5/10.</p>
-                    </div>
-                </div>
+                  
             </div>
-        </div>
+        </section>
 
-        <div class="book-section">
-            <h2>Web Markup and Styling</h2>
+        <section class="book-section" aria-labelledby="web-markup">
+            <div class="section-decoration"></div>
+            <h2 id="web-markup">Web Markup and Styling</h2>
             <p>Tools for crafting visually appealing and structured web content.</p>
             <div class="book-grid">
-                <div class="book-card rating-9">
+                <article class="book-card">
+                    <div class="rating-badge rating-9" aria-label="Rating: 9 out of 10">9</div>
                     <img src="../img/programming/HTML & CSS.png" alt="HTML & CSS Cover">
                     <div class="book-title">
                         <h3>HTML & CSS: Design and Build Websites by Jon Duckett (2011)</h3>
                     </div>
+                    <footer class="book-card-footer">Visual • Foundational</footer>
                     <div class="overview">
                         <h3>Overview</h3>
                         <p>A visually stunning primer on web foundations, transforming markup into art, yet its 2011 vintage omits modern marvels like Flexbox, underscoring how even masterpieces age in the relentless evolution of digital design. 9/10.</p>
                     </div>
-                </div>
-                <div class="book-card rating-8">
-                    <img src="../img/programming/CSS Animation 101.png" alt="CSS Animation 101 Cover">
-                    <div class="book-title">
-                        <h3>CSS Animation 101 by Donovan Hutchinson (2019)</h3>
-                    </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Infuses static pages with dynamic vitality through witty, practical lessons, though its foundational focus may tantalize without satiating those hungering for intricate, advanced choreography in the ballet of web motion. 8/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-7">
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
                     <img src="../img/programming/The Little Book of HTML-CSS Coding Guidelines.png" alt="The Little Book of HTML-CSS Coding Guidelines Cover">
                     <div class="book-title">
                         <h3>The Little Book of HTML/CSS Coding Guidelines by Jens Oliver Meiert (2015)</h3>
                     </div>
+                    <footer class="book-card-footer">Concise • Best Practices</footer>
                     <div class="overview">
                         <h3>Overview</h3>
                         <p>A pocket manifesto championing disciplined markup and style, drawing from Google's playbook for maintainable code, yet its conciseness might gloss over the messy realities of collaborative chaos in real-world development. 7/10.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="book-section">
-            <h2>JavaScript Programming</h2>
+        <section class="book-section" aria-labelledby="javascript-programming">
+            <div class="section-decoration"></div>
+            <h2 id="javascript-programming">JavaScript Programming</h2>
             <p>Diving into the dynamic language of the web.</p>
             <div class="book-grid">
-                <div class="book-card rating-7">
-                    <img src="../img/programming/Eloquent JavaScript.png" alt="Eloquent JavaScript Cover">
-                    <div class="book-title">
-                        <h3>Eloquent JavaScript by Marijn Haverbeke (2018)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Crafts JavaScript's narrative with poetic depth, probing its versatile soul through immersive projects, yet its dense escalation and jargon can alienate novices, mirroring the language's own duality of accessibility and profound complexity. 7/10.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="book-section">
-            <h2>Markdown</h2>
+            </div>
+        </section>
+
+        <section class="book-section" aria-labelledby="markdown">
+            <div class="section-decoration"></div>
+            <h2 id="markdown">Markdown</h2>
             <p>Simplified markup for documentation and beyond.</p>
             <div class="book-grid">
-                <div class="book-card rating-6">
+                <article class="book-card">
+                    <div class="rating-badge rating-6" aria-label="Rating: 6 out of 10">6</div>
                     <img src="../img/programming/The Markdown Guide.png" alt="The Markdown Guide Cover">
                     <div class="book-title">
                         <h3>The Markdown Guide by Matt Cone (2018)</h3>
                     </div>
+                    <footer class="book-card-footer">Reference • Practical</footer>
                     <div class="overview">
                         <h3>Overview</h3>
                         <p>A crisp compendium demystifying Markdown's elegance for plain-text prowess, exhaustive yet approachable, though veterans might deem it superfluous, underscoring its role as a bridge from complexity to simplicity in content creation. 6/10.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-
+        </section>
     </main>
 
     <footer>
+        <div class="footer-decoration"></div>
         <p>&copy; 2025 Olems Bookshelf. All rights reserved.</p>
     </footer>
 
