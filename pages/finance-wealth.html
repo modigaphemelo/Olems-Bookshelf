@@ -13,54 +13,61 @@
     <header>
         <h1>Finance & Wealth</h1>
         <p>Timeless lessons on building prosperity, from behavioral insights to ancient parables.</p>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <div class="header-decoration"></div>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="biographies-memoirs.html">Biographies & Memoirs</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
             <li><a href="fiction-literature.html">Fiction & Literature</a></li>
             <li><a href="personal-development.html">Personal Development</a></li>
             <li><a href="philosophy.html">Philosophy</a></li>
             <li><a href="programming.html">Programming</a></li>
             <li><a href="relationships.html">Relationships</a></li>
             <li><a href="science-mathematics.html">Science & Mathematics</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="book-section">
-            <h2>Financial Wisdom</h2>
+        <section class="book-section" aria-labelledby="financial-wisdom">
+            <div class="section-decoration"></div>
+            <h2 id="financial-wisdom">Financial Wisdom</h2>
             <p>Exploring the mindset and principles behind wealth accumulation and management.</p>
             <div class="book-grid">
-                <div class="book-card rating-8">
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
                     <img src="../img/finance-wealth/The Psychology of Money.jpg" alt="The Psychology of Money Cover">
                     <div class="book-title">
                         <h3>The Psychology of Money by Morgan Housel (2020)</h3>
                     </div>
+                    <footer class="book-card-footer">Behavioral Finance • Insights</footer>
                     <div class="overview">
                         <h3>Overview</h3>
                         <p>Housel's vignettes unravel money's behavioral enigmas with wit and wisdom, yet critics note its anecdotal leanings skirt deeper economics, a profound mirror reflecting: wealth's true currency is humility, lest fortune's illusions blind us to life's unpredictable ledger. 8/10.</p>
                     </div>
-                </div>
-                <div class="book-card rating-7">
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
                     <img src="../img/finance-wealth/The Richest Man In Babylon.png" alt="The Richest Man in Babylon Cover">
                     <div class="book-title">
                         <h3>The Richest Man in Babylon by George S. Clason (1926)</h3>
                     </div>
+                    <footer class="book-card-footer">Parables • Wealth Building</footer>
                     <div class="overview">
                         <h3>Overview</h3>
                         <p>Clason's ancient parables dispense fiscal prudence with timeless charm, yet their simplistic sermons overlook modern complexities, an insightful fable that whispers: prosperity's roots lie in discipline, but thriving demands adapting eternal truths to contemporary tempests. 7/10.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
+        <div class="footer-decoration"></div>
         <p>&copy; 2025 Olems Bookshelf. All rights reserved.</p>
     </footer>
 
