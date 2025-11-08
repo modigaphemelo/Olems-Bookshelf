@@ -13,11 +13,12 @@
     <header>
         <h1>Certifications</h1>
         <p>Guides and resources for conquering certification exams and advancing your career.</p>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <div class="header-decoration"></div>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="biographies-memoirs.html">Biographies & Memoirs</a></li>
@@ -29,28 +30,20 @@
             <li><a href="relationships.html">Relationships</a></li>
             <li><a href="science-mathematics.html">Science & Mathematics</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="book-section">
-            <h2>IT Certifications</h2>
+        <section class="book-section" aria-labelledby="it-certifications">
+            <div class="section-decoration"></div>
+            <h2 id="it-certifications">IT Certifications</h2>
             <p>Essential prep for foundational tech credentials.</p>
             <div class="book-grid">
-                <div class="book-card rating-7">
-                    <img src="../img/certifications/CompTIA A+ CertMike.png" alt="CompTIA A+ CertMike Cover">
-                    <div class="book-title">
-                        <h3>CompTIA A+ CertMike: Core 1 Exam 220-1101 by Mike Chapple (2023)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chapple's certification compass decodes IT enigmas with drills and depth, yet its heft overwhelms the uninitiated, a deep dive into tech's underbelly that reveals: true expertise blooms from balanced guidance, not just exhaustive preparation for gates guarded by acronyms. 7/10.</p>
-                    </div>
-                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
+        <div class="footer-decoration"></div>
         <p>&copy; 2025 Olems Bookshelf. All rights reserved.</p>
     </footer>
 
