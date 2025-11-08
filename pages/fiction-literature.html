@@ -13,11 +13,12 @@
     <header>
         <h1>Fiction & Literature</h1>
         <p>Stories that grip, gut-punch, or tickle, spanning dystopian nightmares, soulful journeys, mobster mayhem, and razor-sharp wit.</p>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <div class="header-decoration"></div>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="biographies-memoirs.html">Biographies & Memoirs</a></li>
@@ -29,179 +30,45 @@
             <li><a href="relationships.html">Relationships</a></li>
             <li><a href="science-mathematics.html">Science & Mathematics</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="book-section">
-            <h2>Dystopian Allegory</h2>
+        <section class="book-section" aria-labelledby="dystopian-allegory">
+            <div class="section-decoration"></div>
+            <h2 id="dystopian-allegory">Dystopian Allegory</h2>
             <p>Tales of societies gone wrong, exposing human nature’s darker side with biting satire.</p>
             <div class="book-grid">
-                <div class="book-card rating-9">
-                    <img src="../img/fiction/Animal Farm.jpg" alt="Animal Farm Cover">
-                    <div class="book-title">
-                        <h3>Animal Farm by George Orwell (1945)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Pigs run the farm, and power corrupts - shocker! Orwell’s barnyard jab at tyranny is razor-sharp but grim as a slaughterhouse. Critics gripe about its heavy-handed moral, yet it’s a classic for a reason. 9/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-8">
-                    <img src="../img/fiction/I Am Legend.jpg" alt="I Am Legend Cover">
-                    <div class="book-title">
-                        <h3>I Am Legend by Richard Matheson (1954)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>One guy versus a vampire apocalypse - talk about a bad day! Tense and genre-defining, but some moan about its rushed ending. Still, it’s a lonely, creepy thrill ride. 8/10.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="book-section">
-            <h2>Personal Journeys</h2>
+            </div>
+        </section>
+        <section class="book-section" aria-labelledby="personal-journeys">
+            <div class="section-decoration"></div>
+            <h2 id="personal-journeys">Personal Journeys</h2>
             <p>Stories of self-discovery, resilience, and existential quests, often with a side of heartstrings.</p>
             <div class="book-grid">
-                <div class="book-card rating-8">
-                    <img src="../img/fiction/Aladdin and the Magic Lamp.jpg" alt="Aladdin and the Magic Lamp Cover">
-                    <div class="book-title">
-                        <h3>Aladdin and the Magic Lamp by Anonymous (c. 1700s, Arabian Nights)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Street rat rubs lamp, gets three wishes - boom, riches, romance, revenge. A glittering fable of fate and fortune, but its “princess in a tower” vibe creaks with age. Magic still dazzles. 8/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-8">
-                    <img src="../img/fiction/The Old Man and the Sea.jpg" alt="The Old Man and the Sea Cover">
-                    <div class="book-title">
-                        <h3>The Old Man and the Sea by Ernest Hemingway (1952)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Old man, big fish, endless struggle - Hemingway’s minimalist masterpiece. Profound or just a guy fishing? Naysayers call it dull; I call it quietly epic. 8/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-7">
-                    <img src="../img/fiction/Tuesdays with Morrie.jpg" alt="Tuesdays with Morrie Cover">
-                    <div class="book-title">
-                        <h3>Tuesdays with Morrie by Mitch Albom (1997)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A dying prof drops life lessons like mic drops. Heartfelt, but its syrupy vibe makes cynics gag. Still, it’ll make you call your grandma. 7/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-8">
-                    <img src="../img/fiction/The Alchemist.jpg" alt="The Alchemist Cover">
-                    <div class="book-title">
-                        <h3>The Alchemist by Paulo Coelho (1988)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chase your dreams, says this mystical road trip. Uplifting, but some roll their eyes at its fortune-cookie wisdom. Perfect for your inner wanderer. 8/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-8">
-                    <img src="../img/fiction/A Hunger Artist.jpg" alt="A Hunger Artist Cover">
-                    <div class="book-title">
-                        <h3>A Hunger Artist by Franz Kafka (1922)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Starving for art’s sake - Kafka’s weird, grim gem. Haunting, but its short length leaves you hungry. Some call it pretentious; I say it’s painfully real. 8/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-8">
-                    <img src="../img/fiction/Robinson Crusoe.jpg" alt="Robinson Crusoe Cover">
-                    <div class="book-title">
-                        <h3>Robinson Crusoe by Daniel Defoe (1719)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Stranded guy builds a life from scratch - OG survival show. Gripping adventure, but its slow pace and old-school views bore some. Still a classic. 8/10.</p>
-                    </div>
-                </div>
             </div>
-        </div>
-
-        <div class="book-section">
-            <h2>Crime and Thriller</h2>
+        </section>
+        <section class="book-section" aria-labelledby="crime-and-thriller">
+            <div class="section-decoration"></div>
+            <h2 id="crime-and-thriller">Crime and Thriller</h2>
             <p>Gritty tales of power, betrayal, and high-stakes schemes that keep you on edge.</p>
             <div class="book-grid">
-                <div class="book-card rating-8">
-                    <img src="../img/fiction/The Godfather.jpg" alt="The Godfather Cover">
-                    <div class="book-title">
-                        <h3>The Godfather by Mario Puzo (1969)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mafia family drama with blood and loyalty galore. Addictive, but its brutal vibe isn’t everyone’s espresso. Critics say it glorifies crime - still a page-turner. 8/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-8">
-                    <img src="../img/fiction/Kane and Abel.jpg" alt="Kane and Abel Cover">
-                    <div class="book-title">
-                        <h3>Kane and Abel by Jeffrey Archer (1979)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Two rivals clash across decades - think soap opera with stakes. Juicy drama, but its length drags for some. A guilty pleasure that delivers. 8/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-8">
-                    <img src="../img/fiction/Not a Penny More, Not a Penny Less.jpg" alt="Not a Penny More, Not a Penny Less Cover">
-                    <div class="book-title">
-                        <h3>Not a Penny More, Not a Penny Less by Jeffrey Archer (1976)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Scammed? Plot sweet revenge! This clever con caper is a blast, though some find it too neat. Fast, fun, and a touch formulaic. 8/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-7">
-                    <img src="../img/fiction/The Sixth Commandment.jpg" alt="The Sixth Commandment Cover">
-                    <div class="book-title">
-                        <h3>The Sixth Commandment by Lawrence Sanders (1979)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Medical thriller with shady ethics and suspense. Keeps you hooked, but its dated style feels like a grainy VHS. Critics call it pulpy - fair point. 7/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-7">
-                    <img src="../img/fiction/Shall We Tell the President.jpg" alt="Shall We Tell the President? Cover">
-                    <div class="book-title">
-                        <h3>Shall We Tell the President? by Jeffrey Archer (1977)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Political plot to save the prez - tense but predictable. Fun for thriller junkies, but some yawn at its cliched twists. Decent, not dazzling. 7/10.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="book-section">
-            <h2>Wit and Satire</h2>
+              
+            </div>
+        </section>
+        <section class="book-section" aria-labelledby="wit-and-satire">
+            <div class="section-decoration"></div>
+            <h2 id="wit-and-satire">Wit and Satire</h2>
             <p>Sharp, clever takes on life and society, served with a smirk.</p>
             <div class="book-grid">
-                <div class="book-card rating-7">
-                    <img src="../img/fiction/Only Dull People Are Brilliant at Breakfast.jpg" alt="Only Dull People Are Brilliant at Breakfast Cover">
-                    <div class="book-title">
-                        <h3>Only Dull People Are Brilliant at Breakfast by Oscar Wilde (2017)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Wilde’s quips slice through society like a butter knife through ego. Witty but fleeting - some call it a cash-grab reprint. Still, it’s Oscar at his snarkiest. 7/10.</p>
-                    </div>
-                </div>
+
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
+        <div class="footer-decoration"></div>
         <p>&copy; 2025 Olems Bookshelf. All rights reserved.</p>
     </footer>
 
@@ -212,5 +79,5 @@
     </button>
 
     <script src="../js/app.js"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9956b200aa334eb4',t:'MTc2MTYxNTMxNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
