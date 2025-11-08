@@ -1,4 +1,3 @@
-<DOCUMENT filename="personal-development.html">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +13,12 @@
     <header>
         <h1>Personal Development & Productivity</h1>
         <p>Books that promise to unlock your potential, boost productivity, or at least make you feel briefly motivated.</p>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <div class="header-decoration"></div>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="biographies-memoirs.html">Biographies & Memoirs</a></li>
@@ -30,256 +30,84 @@
             <li><a href="relationships.html">Relationships</a></li>
             <li><a href="science-mathematics.html">Science & Mathematics</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="book-section">
-            <h2>Productivity and Time Management</h2>
+        <section class="book-section" aria-labelledby="productivity-and-time-management">
+            <div class="section-decoration"></div>
+            <h2 id="productivity-and-time-management">Productivity and Time Management</h2>
             <p>Strategies to reclaim focus amid digital deluge, though often undermined by privilege-blind prescriptions.</p>
             <div class="book-grid">
-                <div class="book-card rating-6">
-                    <img src="../img/personal-development/Deep Work.jpg" alt="Deep Work Cover">
-                    <div class="book-title">
-                        <h3>Deep Work by Cal Newport (2016)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Newport's ode to undistracted immersion beckons like a siren's call, yet its elitist undertones and repetitive harangues against modern connectivity reveal a profound irony: true depth demands acknowledging the shallow privileges that enable such seclusion, leaving many readers stranded in the shallows of unattainable ideals. 6/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-6">
-                    <img src="../img/personal-development/Digital Minimalism.jpg" alt="Digital Minimalism Cover">
-                    <div class="book-title">
-                        <h3>Digital Minimalism by Cal Newport (2019)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>In a world wired for excess, Newport prescribes a Spartan purge of pixels, but critics decry its privileged perch - ignoring the digital necessities of the masses - unveiling a deeper truth: minimalism's elegance often masks the luxury of choice, rendering its wisdom a chore for those tethered by reality. 6/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-5">
-                    <img src="../img/personal-development/Building A Second Brain.png" alt="Building a Second Brain Cover">
-                    <div class="book-title">
-                        <h3>Building a Second Brain by Tiago Forte (2022)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Forte's blueprint for cognitive extension tantalizes with promises of organized genius, yet detractors expose its anecdotal fluff and recycled notions as mere padding for a course upsell, a poignant reminder that building minds requires more than digital scaffolding - it demands original substance over superficial structure. 5/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-4">
+                <article class="book-card">
+                    <div class="rating-badge rating-5" aria-label="Rating: 5 out of 10">5</div>
                     <img src="../img/personal-development/Slow Productivity.jpg" alt="Slow Productivity Cover">
                     <div class="book-title">
                         <h3>Slow Productivity by Cal Newport (2024)</h3>
                     </div>
+                    <footer class="book-card-footer">Anti-Hustle • Deliberate Work</footer>
                     <div class="overview">
                         <h3>Overview</h3>
-                        <p>Newport's antidote to hustle culture whispers of deliberate rhythms, but echoes of his prior works drown in irritating repetition and systemic blindness, illuminating a deeper flaw: true slowness eludes those chained by unacknowledged privileges, turning profound potential into a confusing rehash. 4/10.</p>
+                        <p>Newport's antidote to hustle culture whispers of deliberate rhythms, but echoes of his prior works drown in irritating repetition and systemic blindness, illuminating a deeper flaw: true slowness eludes those chained by unacknowledged privileges, turning profound potential into a confusing rehash. 5/10.</p>
                     </div>
-                </div>
-                <div class="book-card rating-3">
-                    <img src="../img/personal-development/The 4-Hour Workweek.jpg" alt="The 4-Hour Workweek Cover">
-                    <div class="book-title">
-                        <h3>The 4-Hour Workweek by Timothy Ferriss (2007)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Ferriss's escapist fantasy dangles outsourced utopias, but its embellished tales and privilege-veiled hacks unravel under scrutiny, a witty mirage that exposes the peril of chasing shortcuts: true freedom demands ethical foundations, lest the dream devolve into a scammy shadow of itself. 3/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-2">
-                    <img src="../img/personal-development/The Art of Laziness.jpg" alt="The Art of Laziness Cover">
-                    <div class="book-title">
-                        <h3>The Art of Laziness by Peter Taylor (2011)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Taylor's paean to strategic sloth beckons with clever idleness, yet its editing blunders and shallow insights betray a lazy execution, a profound irony that underscores: mastering rest requires diligence, or risk justifying inertia without the artful transformation. 2/10.</p>
-                    </div>
-                </div>
+                </article>
             </div>
-        </div>
-
-        <div class="book-section">
-            <h2>Skill Development and Learning</h2>
+        </section>
+        <section class="book-section" aria-labelledby="skill-development-and-learning">
+            <div class="section-decoration"></div>
+            <h2 id="skill-development-and-learning">Skill Development and Learning</h2>
             <p>Paths to mastery through practice and comprehension, shadowed by oversimplifications and biases.</p>
             <div class="book-grid">
-                <div class="book-card rating-6">
-                    <img src="../img/personal-development/How to Read a Book.jpg" alt="How to Read a Book Cover">
-                    <div class="book-title">
-                        <h3>How to Read a Book by Mortimer J. Adler & Charles Van Doren (1972)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Adler's surgical guide to textual dissection elevates reading to intellectual alchemy, but its rigid hierarchies and Western biases confine wisdom's horizons, a timeless manifesto that whispers: profound engagement demands transcending the author's gaze to embrace diverse vistas. 6/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-5">
-                    <img src="../img/personal-development/The Art of Learning.png" alt="The Art of Learning Cover">
-                    <div class="book-title">
-                        <h3>The Art of Learning by Josh Waitzkin (2007)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Waitzkin's fusion of chess and tai chi unveils learning's fluid dance, yet its meandering anecdotes beg for empirical rigor, a insightful memoir that probes: mastery thrives in adaptability, but without anchors, even profound flows can drift into elusive abstraction. 5/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-5">
-                    <img src="../img/personal-development/The Talent Code.jpg" alt="The Talent Code Cover">
-                    <div class="book-title">
-                        <h3>The Talent Code by Daniel Coyle (2009)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Coyle's myelin mythos elevates practice to neurological artistry, but its genetic oversight and derivative echoes dilute the spark, a witty exploration revealing: talent's code is co-authored by nature and nurture, lest we mythologize effort into solitary salvation. 5/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-5">
-                    <img src="../img/personal-development/A Mind for Numbers.jpg" alt="A Mind for Numbers Cover">
-                    <div class="book-title">
-                        <h3>A Mind for Numbers by Barbara Oakley (2014)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Oakley's guide demystifies math/science learning via metaphors like focused/diffused modes and chunking, but its broad, repetitive advice lacks STEM depth, recycling platitudes in kitschy packaging - ironic, as true numerical mastery demands substance over fluff. 5/10.</p>
-                    </div>
-                </div>
             </div>
-        </div>
-
-        <div class="book-section">
-            <h2>Mindset and Habits</h2>
+        </section>
+        <section class="book-section" aria-labelledby="mindset-and-habits">
+            <div class="section-decoration"></div>
+            <h2 id="mindset-and-habits">Mindset and Habits</h2>
             <p>Cultivating inner resilience, often marred by extremism and pseudoscience.</p>
             <div class="book-grid">
-                <div class="book-card rating-5">
-                    <img src="../img/personal-development/365 Days With Self-Discipline.png" alt="365 Days With Self-Discipline Cover">
-                    <div class="book-title">
-                        <h3>365 Days With Self-Discipline by Martin Meadows (2017)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Meadows's daily discipline dispensary forges tenacity through incremental wisdom, yet its echoing redundancies test the very resolve it builds, a profound calendar of grit that muses: true self-mastery emerges not from endless repetition, but from evolving beyond the rote. 5/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-5">
-                    <img src="../img/personal-development/Can't Hurt Me.jpg" alt="Can't Hurt Me Cover">
-                    <div class="book-title">
-                        <h3>Can't Hurt Me by David Goggins (2018)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Goggins's raw crucible of suffering sculpts unbreakable will, but its glorification of pain and derogatory shadows betray unresolved scars, a deep testament that probes: resilience's forge must temper extremes, lest it shatter the humanity it seeks to strengthen. 5/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-5">
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
                     <img src="../img/personal-development/Dopamine Nation.png" alt="Dopamine Nation Cover">
                     <div class="book-title">
                         <h3>Dopamine Nation by Anna Lembke (2021)</h3>
                     </div>
+                    <footer class="book-card-footer">Addiction • Balance</footer>
                     <div class="overview">
                         <h3>Overview</h3>
-                        <p>Lembke's dopamine dissection unmasks pleasure's perilous pendulum, yet its judgmental anecdotes and scientific stretches veer into moralism, an insightful cautionary tale that reveals: balance demands nuance, not puritanical swings that risk oversimplifying addiction's complex symphony. 5/10.</p>
+                        <p>Lembke's dopamine dissection unmasks pleasure's perilous pendulum, yet its judgmental anecdotes and scientific stretches veer into moralism, an insightful cautionary tale that reveals: balance demands nuance, not puritanical swings that risk oversimplifying addiction's complex symphony. 7/10.</p>
                     </div>
-                </div>
-                <div class="book-card rating-4">
-                    <img src="../img/personal-development/The 48 Laws of Power.png" alt="The 48 Laws of Power Cover">
-                    <div class="book-title">
-                        <h3>The 48 Laws of Power by Robert Greene (1998)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Greene's Machiavellian tapestry weaves dominance from history's threads, but its amoral venom fosters paranoia over empathy, a witty arsenal that delves deep: power's pursuit, unchecked, corrodes the soul, transforming victors into isolated architects of their own downfall. 4/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-3">
-                    <img src="../img/personal-development/Think and Grow Rich.jpg" alt="Think and Grow Rich Cover">
-                    <div class="book-title">
-                        <h3>Think and Grow Rich by Napoleon Hill (1937)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Hill's visualization alchemy transmutes thoughts into fortunes, yet its pseudoscientific haze and unsubstantiated claims evoke skepticism's storm, a profound relic that whispers: true wealth blooms from grounded action, not ethereal hype that risks deluding dreamers into inaction. 3/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-3">
-                    <img src="../img/personal-development/The 10X Rule.jpg" alt="The 10X Rule Cover">
-                    <div class="book-title">
-                        <h3>The 10X Rule by Grant Cardone (2011)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cardone's exponential manifesto thunders for massive action, but its burnout-blind bravado and simplistic shouts overlook sustainability's subtlety, a deep rally cry that exposes: scaling ambition demands wisdom's anchor, lest overreach collapse the very empires it aims to erect. 3/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-2">
-                    <img src="../img/personal-development/The Compound Effect.jpg" alt="The Compound Effect Cover">
-                    <div class="book-title">
-                        <h3>The Compound Effect by Darren Hardy (2010)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Hardy's habit alchemy compounds small steps into triumphs, yet its recycled platitudes and preachy tone dilute the magic, an insightful primer that probes: transformation's essence lies in authenticity, not diluted echoes that leave seekers hungering for deeper substance. 2/10.</p>
-                    </div>
-                </div>
+                </article>
             </div>
-        </div>
-
-        <div class="book-section">
-            <h2>Career and Goal Setting</h2>
+        </section>
+        <section class="book-section" aria-labelledby="career-and-goal-setting">
+            <div class="section-decoration"></div>
+            <h2 id="career-and-goal-setting">Career and Goal Setting</h2>
             <p>Blueprints for ambition, frequently flawed by idealism and oversight.</p>
             <div class="book-grid">
-                <div class="book-card rating-5">
-                    <img src="../img/personal-development/As a Man Thinketh.jpg" alt="As a Man Thinketh Cover">
-                    <div class="book-title">
-                        <h3>As a Man Thinketh by James Allen (1903)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Allen's Victorian ethos equates mindset to destiny's architect, yet its oversimplified sermons dismiss life's complexities, a witty pocket oracle that delves: thoughts shape reality, but ignoring external tempests risks blaming victims for storms beyond their cerebral control. 5/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-5">
-                    <img src="../img/personal-development/So Good They Can't Ignore You.jpg" alt="So Good They Can't Ignore You Cover">
-                    <div class="book-title">
-                        <h3>So Good They Can't Ignore You by Cal Newport (2012)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Newport's skill-centric creed dethrones passion's throne, advocating craftsmanship over whimsy, but its cherry-picked tales and smug dismissals overlook luck's role, a profound manifesto that reveals: excellence's forge tempers talent with opportunity, lest ideals forge chains of frustration. 5/10.</p>
-                    </div>
-                </div>
-                <div class="book-card rating-1">
-                    <img src="../img/personal-development/Design Your Best Year Ever.jpg" alt="Design Your Best Year Ever Cover">
-                    <div class="book-title">
-                        <h3>Design Your Best Year Ever by Darren Hardy (2008)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Hardy's planning palette sketches dream horizons with worksheets, yet its generic pep echoes hollow in a sea of self-help, a witty Mad Libs of motivation that probes: true design demands originality, not filler that fades into forgettable blueprints. 1/10.</p>
-                    </div>
-                </div>
             </div>
-        </div>
-
-        <div class="book-section">
-            <h2>Physical Development</h2>
+        </section>
+        <section class="book-section" aria-labelledby="physical-development">
+            <div class="section-decoration"></div>
+            <h2 id="physical-development">Physical Development</h2>
             <p>Regimens for bodily fortitude, cautioned against hype and hazard.</p>
             <div class="book-grid">
-                <div class="book-card rating-3">
+                <article class="book-card">
+                    <div class="rating-badge rating-3" aria-label="Rating: 3 out of 10">3</div>
                     <img src="../img/personal-development/Convict Conditioning.jpg" alt="Convict Conditioning Cover">
                     <div class="book-title">
                         <h3>Convict Conditioning by Paul Wade (2010)</h3>
                     </div>
+                    <footer class="book-card-footer">Calisthenics • Strength Training</footer>
                     <div class="overview">
                         <h3>Overview</h3>
                         <p>Wade's prison-honed calisthenics bible touts survival strength, yet its macho myths and risky progressions invite injury's specter, a gritty saga that delves: true conditioning builds resilience, not recklessness, lest the quest for power imprison the body in pain. 3/10.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
+        <div class="footer-decoration"></div>
         <p>&copy; 2025 Olems Bookshelf. All rights reserved.</p>
     </footer>
 
@@ -291,4 +119,4 @@
 
     <script src="../js/app.js"></script>
 </body>
-</html></DOCUMENT>
+</html>
