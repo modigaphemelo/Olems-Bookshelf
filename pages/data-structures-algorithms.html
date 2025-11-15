@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Structures and Algorithms</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Books on fundamental data structures, algorithmic thinking, and computational problem-solving.">
+    <link rel="icon" href="../olem.png" sizes="any">
+</head>
+
+<body>
+    <header>
+        <h1>Data Structures and Algorithms</h1>
+        <p>From sorting fundamentals to computational complexity - mastering the building blocks of efficient software.</p>
+        <div class="section-stats">
+            <div class="book-count">55 Books</div>
+        </div>
+        <div class="header-decoration"></div>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
+    </header>
+
+    <nav id="mySidenav" class="sidenav">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
+         <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="biographies-memoirs.html">Biographies & Memoirs</a></li>
+            <li><a href="computer-science.html">Computer Science</a></li>
+            <li><a href="data-structures-algorithms.html" aria-current="page">Data Structures & Algorithms</a></li>
+            <li><a href="fiction-literature.html">Fiction & Literature</a></li>
+            <li><a href="finance-wealth.html">Finance & Wealth</a></li>
+            <li><a href="mathematics.html">Mathematics</a></li>
+            <li><a href="personal-development.html">Personal Development</a></li>
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="physical-exercise-health.html">Physical Exercise & Health</a></li>
+            <li><a href="programming.html">Programming</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="book-section" aria-labelledby="foundational-classics">
+            <div class="section-header">
+                <h2 id="foundational-classics">Foundational Classics</h2>
+                <p>The timeless works that defined computer science and algorithmic thinking.</p>
+                <div class="section-stats">
+                    <div class="book-count">5 Books</div>
+                </div>
+            </div>
+            <div class="book-grid">
+                <article class="book-card">
+                    <div class="rating-badge rating-9" aria-label="Rating: 9 out of 10">9</div>
+                    <img src="../img/data-structures-algorithms/The Art of Computer Programming.jpg" alt="The Art of Computer Programming Cover">
+                    <div class="book-title">
+                        <h3>The Art of Computer Programming by Donald Knuth</h3>
+                    </div>
+                    <footer class="book-card-footer">Monumental • Foundational</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Knuth's life work - where computer science meets mathematical art. Reading this feels less like studying and more like computational enlightenment.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-9" aria-label="Rating: 9 out of 10">9</div>
+                    <img src="../img/data-structures-algorithms/Algorithms in C.jpg" alt="Algorithms in C Cover">
+                    <div class="book-title">
+                        <h3>Algorithms in C by Robert Sedgewick</h3>
+                    </div>
+                    <footer class="book-card-footer">Comprehensive • Practical</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Sedgewick's magnum opus - where algorithms meet implementation with C's raw elegance. A timeless classic that proves good foundations never go out of style.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-9" aria-label="Rating: 9 out of 10">9</div>
+                    <img src="../img/data-structures-algorithms/The Algorithm Design Manual.jpg" alt="The Algorithm Design Manual Cover">
+                    <div class="book-title">
+                        <h3>The Algorithm Design Manual by Steven S. Skiena</h3>
+                    </div>
+                    <footer class="book-card-footer">Practical • Catalog-driven</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Skiena's "war stories" transform abstract algorithms into battle-tested strategies. The closest thing to having a algorithms mentor in book form.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Introduction to Algorithms.jpg" alt="Introduction to Algorithms Cover">
+                    <div class="book-title">
+                        <h3>Introduction to Algorithms by Cormen, Leiserson, Rivest, and Stein</h3>
+                    </div>
+                    <footer class="book-card-footer">Comprehensive • Academic</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>The "CLRS" bible - where mathematical rigor meets computational theory. Perfect for when you need to prove your algorithm works before it actually does.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Algorithms by Dasgupta.jpg" alt="Algorithms by Dasgupta Cover">
+                    <div class="book-title">
+                        <h3>Algorithms by Sanjoy Dasgupta</h3>
+                    </div>
+                    <footer class="book-card-footer">Intuitive • Mathematical</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Elegant explanations that make complex algorithms feel obvious. Proof that the best algorithms books don't just show you how - they show you why.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="book-section" aria-labelledby="python-algorithms">
+            <div class="section-header">
+                <h2 id="python-algorithms">Python Algorithms</h2>
+                <p>Clean implementations and Pythonic approaches to algorithmic problems.</p>
+                <div class="section-stats">
+                    <div class="book-count">6 Books</div>
+                </div>
+            </div>
+            <div class="book-grid">
+                <article class="book-card">
+                    <div class="rating-badge rating-9" aria-label="Rating: 9 out of 10">9</div>
+                    <img src="../img/data-structures-algorithms/Python Algorithms.jpg" alt="Python Algorithms Cover">
+                    <div class="book-title">
+                        <h3>Python Algorithms by Magnus Lie Hetland</h3>
+                    </div>
+                    <footer class="book-card-footer">Comprehensive • Pythonic</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Algorithms explained with Python's elegance and clarity. Because sometimes you want to implement Dijkstra's algorithm without pointer arithmetic.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Grokking Algorithms.jpg" alt="Grokking Algorithms Cover">
+                    <div class="book-title">
+                        <h3>Grokking Algorithms by Aditya Bhargava</h3>
+                    </div>
+                    <footer class="book-card-footer">Visual • Beginner-friendly</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Algorithms explained with beautiful diagrams and Python code. Perfect for when mathematical notation makes your eyes glaze over.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Classic Computer Science Problems in Python.jpg" alt="Classic Computer Science Problems in Python Cover">
+                    <div class="book-title">
+                        <h3>Classic Computer Science Problems in Python by David Kopec</h3>
+                    </div>
+                    <footer class="book-card-footer">Practical • Problem-focused</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Timeless problems meet modern Python. From constraint satisfaction to genetic algorithms, all implemented with clean, readable code.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Data Structures and Algorithms in Python.jpg" alt="Data Structures and Algorithms in Python Cover">
+                    <div class="book-title">
+                        <h3>Data Structures and Algorithms in Python by Goodrich, Tamassia, Goldwasser</h3>
+                    </div>
+                    <footer class="book-card-footer">Comprehensive • Object-oriented</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>A complete tour of data structures with Python's object-oriented elegance. Because inheritance beats manual memory management any day.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Python Data Structures and Algorithms.jpg" alt="Python Data Structures and Algorithms Cover">
+                    <div class="book-title">
+                        <h3>Python Data Structures and Algorithms by Benjamin Baka</h3>
+                    </div>
+                    <footer class="book-card-footer">Practical • Implementation-focused</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Hands-on approach to implementing core data structures in Python. From arrays to graphs, with plenty of working code examples.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Problem Solving with Algorithms and Data Structures using Python.jpg" alt="Problem Solving with Algorithms and Data Structures using Python Cover">
+                    <div class="book-title">
+                        <h3>Problem Solving with Algorithms and Data Structures using Python</h3>
+                    </div>
+                    <footer class="book-card-footer">Educational • Interactive</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Learn by doing with this interactive approach to algorithms. Perfect for building intuition through practical implementation.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="book-section" aria-labelledby="java-algorithms">
+            <div class="section-header">
+                <h2 id="java-algorithms">Java Algorithms</h2>
+                <p>Object-oriented approaches and enterprise-ready algorithm implementations.</p>
+                <div class="section-stats">
+                    <div class="book-count">5 Books</div>
+                </div>
+            </div>
+            <div class="book-grid">
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Algorithms in Java.jpg" alt="Algorithms in Java Cover">
+                    <div class="book-title">
+                        <h3>Algorithms in Java by Robert Sedgewick</h3>
+                    </div>
+                    <footer class="book-card-footer">Comprehensive • Object-oriented</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Sedgewick's classic algorithms adapted for Java's object-oriented paradigm. Because sometimes you need type safety with your sorting algorithms.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Data Structures and Algorithms in Java.jpg" alt="Data Structures and Algorithms in Java Cover">
+                    <div class="book-title">
+                        <h3>Data Structures and Algorithms in Java by Robert Lafore</h3>
+                    </div>
+                    <footer class="book-card-footer">Beginner-friendly • Visual</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Lafore's gentle introduction to data structures with clear Java implementations. Perfect for when C pointers give you nightmares.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Effective Java.jpg" alt="Effective Java Cover">
+                    <div class="book-title">
+                        <h3>Effective Java by Joshua Bloch</h3>
+                    </div>
+                    <footer class="book-card-footer">Best Practices • Java-specific</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Not just algorithms, but how to implement them the Java way. Essential reading for writing efficient, maintainable Java code.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Java Generics and Collections.jpg" alt="Java Generics and Collections Cover">
+                    <div class="book-title">
+                        <h3>Java Generics and Collections by Maurice Naftalin</h3>
+                    </div>
+                    <footer class="book-card-footer">Specialized • Deep Dive</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Master Java's collection framework from the inside out. Understand how ArrayList, HashMap, and friends actually work under the hood.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Head First Java.jpg" alt="Head First Java Cover">
+                    <div class="book-title">
+                        <h3>Head First Java by Kathy Sierra & Bert Bates</h3>
+                    </div>
+                    <footer class="book-card-footer">Beginner-friendly • Engaging</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>The fun way to learn Java fundamentals before diving into complex algorithms. Because you can't implement quicksort if you're still struggling with syntax.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="book-section" aria-labelledby="javascript-algorithms">
+            <div class="section-header">
+                <h2 id="javascript-algorithms">JavaScript Algorithms</h2>
+                <p>Modern algorithmic thinking for the web and Node.js environments.</p>
+                <div class="section-stats">
+                    <div class="book-count">5 Books</div>
+                </div>
+            </div>
+            <div class="book-grid">
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Data Structures and Algorithms with JavaScript.jpg" alt="Data Structures and Algorithms with JavaScript Cover">
+                    <div class="book-title">
+                        <h3>Data Structures and Algorithms with JavaScript by Michael McMillan</h3>
+                    </div>
+                    <footer class="book-card-footer">Modern • Web-focused</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Classic data structures adapted for JavaScript's unique characteristics. Because sometimes your graph needs to be as asynchronous as your code.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Learning JavaScript Data Structures and Algorithms.jpg" alt="Learning JavaScript Data Structures and Algorithms Cover">
+                    <div class="book-title">
+                        <h3>Learning JavaScript Data Structures and Algorithms by Loiane Groner</h3>
+                    </div>
+                    <footer class="book-card-footer">Beginner-friendly • Comprehensive</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>From arrays to complex graph algorithms, all implemented in modern JavaScript. Perfect for full-stack developers who need solid fundamentals.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/JavaScript Data Structures and Algorithms.jpg" alt="JavaScript Data Structures and Algorithms Cover">
+                    <div class="book-title">
+                        <h3>JavaScript Data Structures and Algorithms by Sammie Bae</h3>
+                    </div>
+                    <footer class="book-card-footer">Practical • ES6+</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Modern JavaScript features meet classic algorithms. Learn how to leverage ES6+ syntax for cleaner, more efficient implementations.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Understanding Algorithms and Data Structures.jpg" alt="Understanding Algorithms and Data Structures Cover">
+                    <div class="book-title">
+                        <h3>Understanding Algorithms and Data Structures in JavaScript</h3>
+                    </div>
+                    <footer class="book-card-footer">Conceptual • Deep Understanding</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Focuses on building intuition for how algorithms work, with JavaScript as the implementation language. Less code, more understanding.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-6" aria-label="Rating: 6 out of 10">6</div>
+                    <img src="../img/data-structures-algorithms/Data Structures and Algorithms Using JavaScript.jpg" alt="Data Structures and Algorithms Using JavaScript Cover">
+                    <div class="book-title">
+                        <h3>Data Structures and Algorithms Using JavaScript by Hemant Jain</h3>
+                    </div>
+                    <footer class="book-card-footer">Comprehensive • Problem-oriented</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Extensive collection of data structure implementations and algorithm solutions in JavaScript. Good reference for interview preparation.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="book-section" aria-labelledby="c-cpp-algorithms">
+            <div class="section-header">
+                <h2 id="c-cpp-algorithms">C & C++ Algorithms</h2>
+                <p>Low-level control and high-performance algorithm implementations.</p>
+                <div class="section-stats">
+                    <div class="book-count">6 Books</div>
+                </div>
+            </div>
+            <div class="book-grid">
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Data Structures and Algorithm Analysis in C.jpg" alt="Data Structures and Algorithm Analysis in C Cover">
+                    <div class="book-title">
+                        <h3>Data Structures and Algorithm Analysis in C by Mark Allen Weiss</h3>
+                    </div>
+                    <footer class="book-card-footer">Analytical • Implementation-focused</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Weiss teaches data structures with the patience of a saint and the precision of a mathematician. Because sometimes O(n²) just won't cut it.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Data Structures and Algorithms in C++.jpg" alt="Data Structures and Algorithms in C++ Cover">
+                    <div class="book-title">
+                        <h3>Data Structures and Algorithms in C++ by Michael T. Goodrich</h3>
+                    </div>
+                    <footer class="book-card-footer">Object-oriented • STL-focused</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>C++ meets data structures with STL elegance. Learn to leverage templates and the standard library for robust algorithm implementations.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Cracking the Coding Interview.jpg" alt="Cracking the Coding Interview Cover">
+                    <div class="book-title">
+                        <h3>Cracking the Coding Interview by Gayle Laakmann McDowell</h3>
+                    </div>
+                    <footer class="book-card-footer">Interview-focused • Practical</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>The corporate gauntlet survival guide - because sometimes you need to invert a binary tree while maintaining eye contact and pretending you're not sweating.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Data Structures Using C and C++.jpg" alt="Data Structures Using C and C++ Cover">
+                    <div class="book-title">
+                        <h3>Data Structures Using C and C++ by Langsam, Augenstein, and Tanenbaum</h3>
+                    </div>
+                    <footer class="book-card-footer">Dual-language • Comprehensive</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Two languages, one book - because why choose between manual memory management and RAII when you can stress about both simultaneously?</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Effective C++.jpg" alt="Effective C++ Cover">
+                    <div class="book-title">
+                        <h3>Effective C++ by Scott Meyers</h3>
+                    </div>
+                    <footer class="book-card-footer">Best Practices • C++ Specific</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Essential reading for writing efficient C++ code. Learn the idioms and patterns that separate good C++ from great C++.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/The C++ Standard Library.jpg" alt="The C++ Standard Library Cover">
+                    <div class="book-title">
+                        <h3>The C++ Standard Library by Nicolai M. Josuttis</h3>
+                    </div>
+                    <footer class="book-card-footer">Reference • Comprehensive</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Master the algorithms and data structures already built into C++. Sometimes the best algorithm is the one you don't have to write yourself.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="book-section" aria-labelledby="csharp-algorithms">
+            <div class="section-header">
+                <h2 id="csharp-algorithms">C# Algorithms</h2>
+                <p>.NET focused algorithm implementations and enterprise solutions.</p>
+                <div class="section-stats">
+                    <div class="book-count">4 Books</div>
+                </div>
+            </div>
+            <div class="book-grid">
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Data Structures and Algorithms in C#.jpg" alt="Data Structures and Algorithms in C# Cover">
+                    <div class="book-title">
+                        <h3>Data Structures and Algorithms in C# by Michael McMillan</h3>
+                    </div>
+                    <footer class="book-card-footer">Comprehensive • .NET Focused</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>C# implementations of classic algorithms with .NET best practices. Because sometimes you need generics and LINQ with your graph traversal.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Algorithms in C#.jpg" alt="Algorithms in C# Cover">
+                    <div class="book-title">
+                        <h3>Algorithms in C# by Robert Sedgewick</h3>
+                    </div>
+                    <footer class="book-card-footer">Adapted Classic • C# Specific</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Sedgewick's algorithms translated to C# with attention to .NET conventions. The classic approach meets modern language features.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/C# Data Structures and Algorithms.jpg" alt="C# Data Structures and Algorithms Cover">
+                    <div class="book-title">
+                        <h3>C# Data Structures and Algorithms by Marcin Jamro</h3>
+                    </div>
+                    <footer class="book-card-footer">Practical • Modern C#</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Modern C# features applied to algorithm implementation. Learn to leverage the latest language features for cleaner, more efficient code.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-6" aria-label="Rating: 6 out of 10">6</div>
+                    <img src="../img/data-structures-algorithms/Data Structures and Algorithms Using C#.jpg" alt="Data Structures and Algorithms Using C# Cover">
+                    <div class="book-title">
+                        <h3>Data Structures and Algorithms Using C# by Michael McMillan</h3>
+                    </div>
+                    <footer class="book-card-footer">Beginner-friendly • .NET</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Gentle introduction to data structures using C# and .NET conventions. Good starting point for developers new to algorithms.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="book-section" aria-labelledby="production-algorithms">
+            <div class="section-header">
+                <h2 id="production-algorithms">Production Algorithms</h2>
+                <p>Algorithms that actually earn their keep in production systems, not just interview whiteboards.</p>
+                <div class="section-stats">
+                    <div class="book-count">5 Books</div>
+                </div>
+            </div>
+            <div class="book-grid">
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Streaming Systems.jpg" alt="Streaming Systems Cover">
+                    <div class="book-title">
+                        <h3>Streaming Systems by Tyler Akidau</h3>
+                    </div>
+                    <footer class="book-card-footer">Stream Processing • Real-time</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>From the Google Dataflow team - the art of taming infinite data streams. Because in production, data never stops flowing and neither should your algorithms.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Data Algorithms.jpg" alt="Data Algorithms Cover">
+                    <div class="book-title">
+                        <h3>Data Algorithms by Mahmoud Parsian</h3>
+                    </div>
+                    <footer class="book-card-footer">Big Data • MapReduce</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Recipes for scaling machine learning when your data thinks it's too important for a single machine. Because sometimes O(n) is the problem, not the solution.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Practical Algorithms for Programmers.jpg" alt="Practical Algorithms for Programmers Cover">
+                    <div class="book-title">
+                        <h3>Practical Algorithms for Programmers by Andrew Binstock</h3>
+                    </div>
+                    <footer class="book-card-footer">Algorithms • Implementation</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Algorithms you'll actually use on Monday morning, not just dream about on Sunday night. The difference between academic purity and getting stuff shipped.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Real-World Algorithms.jpg" alt="Real-World Algorithms Cover">
+                    <div class="book-title">
+                        <h3>Real-World Algorithms by Panos Louridas</h3>
+                    </div>
+                    <footer class="book-card-footer">Algorithms • Applications</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Where algorithms meet messy reality - because in production, your data has edge cases, your servers have limits, and your users have expectations.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Algorithmic Puzzles.jpg" alt="Algorithmic Puzzles Cover">
+                    <div class="book-title">
+                        <h3>Algorithmic Puzzles by Anany Levitin</h3>
+                    </div>
+                    <footer class="book-card-footer">Problem-solving • Interviews</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Brain teasers that sharpen your problem-solving instincts. Because production bugs are just puzzles that forgot to mention they were time-sensitive.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="book-section" aria-labelledby="competitive-programming">
+            <div class="section-header">
+                <h2 id="competitive-programming">Competitive Programming</h2>
+                <p>Mastering the art of solving problems under pressure and constraints.</p>
+                <div class="section-stats">
+                    <div class="book-count">6 Books</div>
+                </div>
+            </div>
+            <div class="book-grid">
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Competitive Programming.jpg" alt="Competitive Programming Cover">
+                    <div class="book-title">
+                        <h3>Competitive Programming by Steven and Felix Halim</h3>
+                    </div>
+                    <footer class="book-card-footer">Comprehensive • Practice-oriented</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>The Halim brothers turn programming contests into a science. Because sometimes O(1) isn't fast enough - you need O(stunning victory).</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Programming Challenges.jpg" alt="Programming Challenges Cover">
+                    <div class="book-title">
+                        <h3>Programming Challenges by Skiena and Revilla</h3>
+                    </div>
+                    <footer class="book-card-footer">Problem-driven • Educational</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Skiena returns with a treasure trove of brain teasers. Perfect for when you've mastered theory and want to watch your confidence crumble gracefully.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Competitive Programmer's Handbook.jpg" alt="Competitive Programmer's Handbook Cover">
+                    <div class="book-title">
+                        <h3>Competitive Programmer's Handbook by Antti Laaksonen</h3>
+                    </div>
+                    <footer class="book-card-footer">Comprehensive • Free Resource</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>The free bible for competitive programmers. Covers everything from basic data structures to advanced graph algorithms and computational geometry.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Guide to Competitive Programming.jpg" alt="Guide to Competitive Programming Cover">
+                    <div class="book-title">
+                        <h3>Guide to Competitive Programming by Antti Laaksonen</h3>
+                    </div>
+                    <footer class="book-card-footer">Structured • Learning-focused</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Systematic approach to competitive programming with C++ focus. Learn the strategies that separate winners from also-rans.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Algorithmic Puzzles.jpg" alt="Algorithmic Puzzles Cover">
+                    <div class="book-title">
+                        <h3>Algorithmic Puzzles by Anany Levitin</h3>
+                    </div>
+                    <footer class="book-card-footer">Puzzle-focused • Brain-teasing</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Sharpen your problem-solving skills with classic algorithmic puzzles. Perfect for developing the "aha!" moments that crack tough problems.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-6" aria-label="Rating: 6 out of 10">6</div>
+                    <img src="../img/data-structures-algorithms/Principles of Algorithmic Problem Solving.jpg" alt="Principles of Algorithmic Problem Solving Cover">
+                    <div class="book-title">
+                        <h3>Principles of Algorithmic Problem Solving by Johan Sannemo</h3>
+                    </div>
+                    <footer class="book-card-footer">Theoretical • Problem-solving</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Focuses on the thought processes behind solving algorithmic problems. Learn how to approach problems you've never seen before.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="book-section" aria-labelledby="specialized-topics">
+            <div class="section-header">
+                <h2 id="specialized-topics">Specialized Topics</h2>
+                <p>Advanced algorithms and domain-specific computational techniques.</p>
+                <div class="section-stats">
+                    <div class="book-count">8 Books</div>
+                </div>
+            </div>
+            <div class="book-grid">
+                <article class="book-card">
+                    <div class="rating-badge rating-9" aria-label="Rating: 9 out of 10">9</div>
+                    <img src="../img/data-structures-algorithms/Introduction to the Design and Analysis of Algorithms.jpg" alt="Introduction to the Design and Analysis of Algorithms Cover">
+                    <div class="book-title">
+                        <h3>Introduction to the Design and Analysis of Algorithms by Anany Levitin</h3>
+                    </div>
+                    <footer class="book-card-footer">Analytical • Design-focused</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Focuses on the why behind algorithm design choices. Learn to think like an algorithm designer, not just an implementer.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Algorithm Design by Kleinberg and Tardos.jpg" alt="Algorithm Design by Kleinberg and Tardos Cover">
+                    <div class="book-title">
+                        <h3>Algorithm Design by Jon Kleinberg & Éva Tardos</h3>
+                    </div>
+                    <footer class="book-card-footer">Comprehensive • Application-focused</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Beautifully explains how to design algorithms for real-world problems. The perfect bridge between theory and practical application.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Computational Geometry.jpg" alt="Computational Geometry Cover">
+                    <div class="book-title">
+                        <h3>Computational Geometry by Mark de Berg</h3>
+                    </div>
+                    <footer class="book-card-footer">Specialized • Mathematical</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Algorithms for geometric problems - from convex hulls to Voronoi diagrams. Essential for graphics, GIS, and robotics applications.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Network Flows.jpg" alt="Network Flows Cover">
+                    <div class="book-title">
+                        <h3>Network Flows by Ravindra K. Ahuja</h3>
+                    </div>
+                    <footer class="book-card-footer">Specialized • Optimization</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Comprehensive coverage of network flow algorithms and applications. From max-flow min-cut to transportation problems.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Approximation Algorithms.jpg" alt="Approximation Algorithms Cover">
+                    <div class="book-title">
+                        <h3>Approximation Algorithms by Vijay V. Vazirani</h3>
+                    </div>
+                    <footer class="book-card-footer">Advanced • Theoretical</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>When exact solutions are impossible, approximation algorithms save the day. Essential for NP-hard problems in practice.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Randomized Algorithms.jpg" alt="Randomized Algorithms Cover">
+                    <div class="book-title">
+                        <h3>Randomized Algorithms by Rajeev Motwani and Prabhakar Raghavan</h3>
+                    </div>
+                    <footer class="book-card-footer">Advanced • Probabilistic</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Harness the power of randomness in algorithm design. From quicksort to Monte Carlo methods, learn when randomness helps.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/String Algorithms.jpg" alt="String Algorithms Cover">
+                    <div class="book-title">
+                        <h3>String Algorithms by Dan Gusfield</h3>
+                    </div>
+                    <footer class="book-card-footer">Specialized • Text Processing</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>From simple search to complex genomic sequence alignment. Master the algorithms that power text processing and bioinformatics.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-6" aria-label="Rating: 6 out of 10">6</div>
+                    <img src="../img/data-structures-algorithms/Distributed Algorithms.jpg" alt="Distributed Algorithms Cover">
+                    <div class="book-title">
+                        <h3>Distributed Algorithms by Nancy Lynch</h3>
+                    </div>
+                    <footer class="book-card-footer">Advanced • Distributed Systems</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Algorithms for systems where no single machine has complete information. Essential for understanding modern distributed systems.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="book-section" aria-labelledby="system-design-applications">
+            <div class="section-header">
+                <h2 id="system-design-applications">System Design & Applications</h2>
+                <p>Where algorithms meet architecture - scaling theory to production reality.</p>
+                <div class="section-stats">
+                    <div class="book-count">5 Books</div>
+                </div>
+            </div>
+            <div class="book-grid">
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/System Design Interview.jpg" alt="System Design Interview Cover">
+                    <div class="book-title">
+                        <h3>System Design Interview by Alex Xu</h3>
+                    </div>
+                    <footer class="book-card-footer">Practical • Architecture-focused</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Bridges the gap between algorithms and real-world system design. Learn how algorithms power large-scale systems like Twitter and Uber.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-8" aria-label="Rating: 8 out of 10">8</div>
+                    <img src="../img/data-structures-algorithms/Designing Data-Intensive Applications.jpg" alt="Designing Data-Intensive Applications Cover">
+                    <div class="book-title">
+                        <h3>Designing Data-Intensive Applications by Martin Kleppmann</h3>
+                    </div>
+                    <footer class="book-card-footer">Comprehensive • Systems-focused</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>The missing link between academic algorithms and production systems. Where B-trees meet distributed consensus and your database stops being magic.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Elements of Programming Interviews.jpg" alt="Elements of Programming Interviews Cover">
+                    <div class="book-title">
+                        <h3>Elements of Programming Interviews by Adnan Aziz</h3>
+                    </div>
+                    <footer class="book-card-footer">Interview-focused • Comprehensive</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Another excellent resource for technical interview preparation with focus on problem-solving strategies and efficient implementations.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-7" aria-label="Rating: 7 out of 10">7</div>
+                    <img src="../img/data-structures-algorithms/Programming Pearls.jpg" alt="Programming Pearls Cover">
+                    <div class="book-title">
+                        <h3>Programming Pearls by Jon Bentley</h3>
+                    </div>
+                    <footer class="book-card-footer">Classic • Problem-solving</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Timeless essays on algorithm design and problem-solving. Learn the art of finding elegant solutions to messy problems.</p>
+                    </div>
+                </article>
+                <article class="book-card">
+                    <div class="rating-badge rating-6" aria-label="Rating: 6 out of 10">6</div>
+                    <img src="../img/data-structures-algorithms/Algorithmic Thinking.jpg" alt="Algorithmic Thinking Cover">
+                    <div class="book-title">
+                        <h3>Algorithmic Thinking by Daniel Zingaro</h3>
+                    </div>
+                    <footer class="book-card-footer">Conceptual • Learning-focused</footer>
+                    <div class="overview">
+                        <h3>Overview</h3>
+                        <p>Focuses on developing the mindset needed to solve algorithmic problems, with practical examples and step-by-step reasoning.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-decoration"></div>
+        <p>&copy; 2025 Olems Bookshelf. All rights reserved.</p>
+    </footer>
+
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
